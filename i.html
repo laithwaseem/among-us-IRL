@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div {
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            p {
+                color: white;
+                font-size: 50px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div onclick="
+        let result = Math.random();
+        if (result > 0 && result <= 1/2) {
+            alert('1 = حامي الفراش\n2 = المهاجم');
+        } else if (result > 0 && result > 1/2) {
+            alert('1 = المهاجم\n2 = حامي الفراش');
+        }
+        ">
+            <p>ابدأ</p>
+        </div>
+    </body>
+</html>
